@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="370">
+    <title>Communication scheme</title>
+
+    <style type="text/css">
+        <![CDATA[
+            rect.box {
+                width: 190px;
+                height: 50px;
+                fill: transparent;
+                stroke: gray;
+                stroke-width: 2px;
+                rx: 20px;
+                ry: 20px;
+            }
+            text.boxText {
+                transform: translate(10px, 30px);
+            }
+            line.boxArrow {
+                stroke: green;
+                stroke-width: 3px;
+            }
+            rect.container {
+                width: 210px;
+                height: 140px;
+                fill: transparent;
+                stroke: gray;
+                stroke-width: 3px;
+                stroke-dasharray: 7;
+                rx: 20px;
+                ry: 20px;
+            }
+            line.containerArrow {
+                stroke: red;
+                stroke-width: 3px;
+            }
+        ]]>
+    </style>
+
+    <g transform="translate(10,10)">
+        <rect class="container"></rect>
+
+        <g transform="translate(10,10)">
+            <rect class="box"></rect>
+            <text class="boxText">@fructo/gui-core</text>
+        </g>
+
+        <line class="boxArrow" x1="100" y1="60" x2="100" y2="80" />
+
+        <g transform="translate(10,80)">
+            <rect class="box"></rect>
+            <text class="boxText">@fructo/gui-electron</text>
+        </g>
+    </g>
+
+    <g transform="translate(240,10)">
+        <rect class="container"></rect>
+
+        <g transform="translate(10,10)">
+            <rect class="box"></rect>
+            <text class="boxText">@fructo/cli-core</text>
+        </g>
+
+        <line class="boxArrow" x1="100" y1="60" x2="100" y2="80" />
+
+        <g transform="translate(10,80)">
+            <rect class="box"></rect>
+            <text class="boxText">@fructo/cli-deno</text>
+        </g>
+    </g>
+
+    <line class="containerArrow" x1="320" y1="170" x2="320" y2="150" />
+    <line class="containerArrow" x1="150" y1="170" x2="150" y2="150" />
+
+    <g transform="translate(130,170)">
+        <rect class="container"></rect>
+
+        <g transform="translate(10,10)">
+            <rect class="box"></rect>
+            <text class="boxText">@fructo/daemon-core</text>
+        </g>
+
+        <line class="boxArrow" x1="100" y1="60" x2="100" y2="80" />
+
+        <g transform="translate(10,80)">
+            <rect class="box"></rect>
+            <text class="boxText">@fructo/daemon-deno</text>
+        </g>
+    </g>
+
+    <g transform="translate(10,330)">
+        <g>
+            <rect width="10" height="10" style="fill: red;"></rect>
+            <text style="transform: translate(15px,11px)">TCP + @fructo/transport-protocol + JSON</text>
+        </g>
+
+        <g transform="translate(0,20)">
+            <rect width="10" height="10" style="fill: green;"></rect>
+            <text style="transform: translate(15px,11px)">JSON</text>
+        </g>
+    </g>
+
+</svg>
